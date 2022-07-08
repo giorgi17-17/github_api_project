@@ -34,10 +34,6 @@ const User = () => {
         <div className={userStyles.info}>
           <img src={user.avatar_url} alt={user.name} />
           <h1>Name: {user.name}</h1>
-
-          <div>
-            <h1>Add To Favorites</h1>
-          </div>
           <div className={userStyles.infoCont}>
             <ul>
               <li>{user.bio}</li>

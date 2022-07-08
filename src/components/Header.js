@@ -26,9 +26,9 @@ const Header = () => {
             <NavLink className={styles.li} to={ROUTES.SEARCHS}>
               Search
             </NavLink>
-            <NavLink className={styles.li} to={ROUTES.FAVORITES}>
+            {/* <NavLink className={styles.li} to={ROUTES.FAVORITES}>
               Favorites
-            </NavLink>
+            </NavLink> */}
           </ul>
           <button onClick={logout} className={styles.dashbtn}>
             Log Out

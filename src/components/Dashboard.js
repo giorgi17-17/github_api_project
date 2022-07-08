@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Dashboard = () => {
-  const { user, setPage, loading } = useContext(AppContext);
+  const { user, setPage } = useContext(AppContext);
 
   return (
     <div className={dashboardStyles.main}>

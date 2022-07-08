@@ -1,6 +1,6 @@
 import AuthGuard from "../components/AuthGuard";
 import GuestGuard from "../components/GuestGuard";
-import { Dashboard, Favorites, Searchs, Signin, Signup, User } from "./pages";
+import { Dashboard, Searchs, Signin, Signup, User } from "./pages";
 
 const ROUTES = {
   DASHBOARD: "/",
@@ -31,11 +31,6 @@ const ROUTES_CONFIG = [
     path: ROUTES.SEARCHS,
     guard: AuthGuard,
     page: Searchs,
-  },
-  {
-    path: ROUTES.FAVORITES,
-    guard: AuthGuard,
-    page: Favorites,
   },
   {
     path: ROUTES.USER,
