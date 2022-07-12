@@ -4,12 +4,7 @@ async function getUsers(page) {
   const API_URL = `https://api.github.com/search/users?q=followers:%3E=1000&per_page=20&page=${page}`;
 
   try {
-    const res = await axios.get(`${API_URL}`, {
-      headers: {
-        "Content-Type": "application.json",
-        Authorization: `token ${process.env.REACT_APP_AUTH_TOKEN}`,
-      },
-    });
+    const res = await axios.get(`${API_URL}`);
     return res.data.items;
   } catch (error) {
     console.log(error);
@@ -18,9 +13,9 @@ async function getUsers(page) {
 }
 
 const USER_API = `https://api.github.com/users`;
-// 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
-// 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
+
 // new token
+// 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
 
 async function getUser(title) {
   try {
