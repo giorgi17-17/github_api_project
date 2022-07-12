@@ -19,12 +19,7 @@ const USER_API = `https://api.github.com/users`;
 
 async function getUser(title) {
   try {
-    const response = await axios.get(`${USER_API}/${title}`, {
-      headers: {
-        "Content-Type": "application.json",
-        Authorization: `token ${process.env.REACT_APP_AUTH_TOKEN}`,
-      },
-    });
+    const response = await axios.get(`${USER_API}/${title}`);
     return response.data;
   } catch (error) {
     throw new Error("userrrrrr");
